@@ -43,6 +43,10 @@ In this example, the XML File "feed.xml" is stored in the root of the project an
 ```bash
  php bin/console app:parse-file "feed.xml", sqlite
 ```
+Error Logs
+-----
+
+Errors are logged in `var\log\errorLog`
 
 Tests
 -----
