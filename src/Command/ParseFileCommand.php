@@ -29,6 +29,9 @@ class ParseFileCommand extends Command
         parent::__construct();
     }
 
+    /**
+     * configure the command. Set a description, help text and the arguments
+     */
     protected function configure(): void
     {
         //set arguments Input (path to the file), target (target where data is to be saved)
@@ -41,6 +44,10 @@ class ParseFileCommand extends Command
             ->addArgument('target', InputArgument::REQUIRED, 'Pass the parameter.');
     }
     
+/**
+ * excute the command
+ * @return int
+ */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $log = new Logger('command');

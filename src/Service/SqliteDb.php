@@ -12,6 +12,10 @@ class SqliteDb implements DbAdapterInterface
 {
     public function __construct(private readonly EntityManagerInterface $entityManager){
     }
+
+    /**
+     * creates an Item and saves it in the Sqlite database
+     */
     public function save($data)
     {
         $itemFactory = new ItemFactory();
