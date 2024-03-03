@@ -44,6 +44,15 @@ In this example, the XML File "feed.xml" is stored in the root of the project an
  php bin/console app:parse-file "feed.xml", sqlite
 ```
 
+Tests
+-----
+
+Execute this command to run tests:
+
+```bash
+cd my_project/
+./bin/phpunit
+```
 
 [1]: https://symfony.com/doc/current/setup.html#technical-requirements
 [2]: https://getcomposer.org/
